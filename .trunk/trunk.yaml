@@ -7,7 +7,7 @@ cli:
 runtimes:
   enabled:
     - go@1.19.5
-    - node@18.12.1
+    - node@20.12.2
     - python@3.10.8
 # This is the section where you manage your linters. (https://docs.trunk.io/check/configuration)
 lint:

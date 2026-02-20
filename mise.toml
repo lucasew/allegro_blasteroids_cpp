@@ -1,0 +1,12 @@
+[tools]
+trunk = "latest"
+node = "lts"
+
+[tasks]
+install = 'sh scripts/install.sh'
+lint = 'trunk check'
+fmt = 'trunk fmt'
+"test:compile" = 'g++ main.cc -o main $(pkg-config --libs allegro-5 allegro_primitives-5 allegro_image-5 allegro_font-5 allegro_ttf-5 allegro_audio-5 allegro_acodec-5 allegro_dialog-5)'
+test = { depends = ["test:*"] }
+codegen = 'echo "No codegen"'
+ci = { depends = ["lint", "test"] }

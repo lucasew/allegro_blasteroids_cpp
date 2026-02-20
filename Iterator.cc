@@ -1,5 +1,4 @@
-template<class T>
-class Iterator {
-    public:
-        virtual T *next() = 0;
+template <class T> class Iterator {
+public:
+  virtual T *next() = 0;
 };

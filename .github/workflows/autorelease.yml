@@ -22,8 +22,6 @@ jobs:
           fetch-depth: 0
 
       - uses: jdx/mise-action@v2
-        with:
-          version: 2024.11.8
 
       - run: mise run install
       - run: mise run codegen
